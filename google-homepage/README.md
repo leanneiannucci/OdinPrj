@@ -6,3 +6,5 @@ Created August 31, 2020<br>
 <br><br>
 Last Edited August 31, 2020<br>
   </p>
+  
+  <p> The purpose of this project is to essentially duplicate the aesthetic but not functionality of the google homepage as my first HTML/CSS project.</p>
