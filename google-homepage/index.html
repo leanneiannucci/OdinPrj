@@ -13,20 +13,16 @@
         <!--Begin LEI CSS-->
 
         <style>
-            .grid-container {
-              display: grid;
-              grid-template-areas:
-                'header header header header header header'
-                'left middle middle middle middle right'
-                'footer footer footer footer footer footer';
+
+            .nav-item{
+              display: block;
+              /* text-align: right; */
             }
 
+            .searchbar-img {
 
-            .header {
-
-              grid-template-columns: repeat(4, auto);
-              grid-template-rows: repeat(4, 15px);
-              list-style-type: none;
+              display: block;
+              text-align: center;
             }
         </style>
 
@@ -36,16 +32,51 @@
 
     <body>
 
-    <header>
-        <a href="default.asp">About</a>
-        <a href="news.asp">Store</a>
-        <a href="contact.asp">Gmail</a>
-        <a href="about.asp">Images</a>
-    </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gmail</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Images</a>
+            </li>
 
 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src ="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" width="20px" height "20px">
+                  <a class="nav-link" href="#"></a>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="searchbar-img">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-
+      </div>
     </body>
 
 </html>
