@@ -3,27 +3,48 @@
 
     <head>
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!--Bootstrap Style Sheets-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
         <!--Begin LEI CSS-->
 
         <style>
 
-            .nav-item{
-              display: block;
-              /* text-align: right; */
-            }
-
             .searchbar-img {
-
               display: block;
               text-align: center;
             }
+            .navbar{
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+
+            }
+
+            .nav-item{
+              color:rgb(34,34,34);
+              font-family:arial,sans-serif;
+              font-size:13px;
+              padding: 15px;
+              padding-top:18px;
+
+            }
+            .middle-buff{
+              flex: 1;
+            }
+            .rg-3{
+              padding-top:15px;
+              padding-right: 25px;
+            }
+            .rg-4{
+              padding: 7px 12px 7px 12px;
+              margin-bottom: 18px;
+              margin-top:10px;
+
+              background-clip: padding-box;
+              background-color: rgb(66,133,244);
+              color:white;
+              border-radius:2px;
+            }
+
+
         </style>
 
 
@@ -32,47 +53,36 @@
 
     <body>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="navbar">
+            <div class="nav-item lf lf-1">
+                  About
+            </div>
+            <div class="nav-item lf lf-2">
+               Store
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Store</a>
-            </li>
+            <div class="nav-item middle-buff">
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gmail</a>
-            </li>
+            </div>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Images</a>
-            </li>
+            <div class="nav-item rg rg-1">
+               Gmail
+            </div>
+
+            <div class="nav-item rg rg-2">
+               Images
+            </div>
 
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src ="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" width="20px" height "20px">
-                  <a class="nav-link" href="#"></a>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+            <div class="nav-item rg rg-3">
+                   <img src ="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" width="20px" height "20px">
+            </div>
 
+            <div class="nav-item rg rg-4">
+              <b>Sign in</b>
+            </div>
 
-          </ul>
-
-        </div>
-      </nav>
+      </div>
 
       <div class="searchbar-img">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
