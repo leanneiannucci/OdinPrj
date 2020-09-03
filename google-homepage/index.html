@@ -22,11 +22,12 @@
               color:rgb(34,34,34);
               font-family:arial,sans-serif;
               font-size:13px;
-              padding: 15px;
-              padding-top:18px;
+              padding: 18px 10px 20px 10px;
+              text-decoration:none;
 
             }
             .middle-buff{
+              padding:0px;
               flex: 1;
             }
             .rg-3{
@@ -43,6 +44,13 @@
               color:white;
               border-radius:2px;
             }
+            a {
+              text-decoration: none;
+              color:inherit;
+            }
+            a:hover{
+              text-decoration:underline;
+            }
 
 
         </style>
@@ -53,12 +61,14 @@
 
     <body>
 
-      <div class="navbar">
+      <header class="navbar">
             <div class="nav-item lf lf-1">
-                  About
+                  <a href="#">About
+                  </a>
             </div>
             <div class="nav-item lf lf-2">
-               Store
+               <a href="#">Store
+                 </a>
             </div>
 
             <div class="nav-item middle-buff">
@@ -66,23 +76,27 @@
             </div>
 
             <div class="nav-item rg rg-1">
-               Gmail
+               <a href="#">Gmail
+                 </a>
             </div>
 
             <div class="nav-item rg rg-2">
-               Images
+               <a href="#">Images
+                 </a>
             </div>
 
 
             <div class="nav-item rg rg-3">
-                   <img src ="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" width="20px" height "20px">
+                <a href="#"><img src ="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" width="20px" height "20px">
+                </a>
             </div>
 
             <div class="nav-item rg rg-4">
-              <b>Sign in</b>
+              <a href="#"><b>Sign in</b>
+                </a>
             </div>
 
-      </div>
+      </header>
 
       <div class="searchbar-img">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
