@@ -10,6 +10,7 @@
             .searchbar-img {
               display: block;
               text-align: center;
+              padding-top: 120px;
             }
             .navbar{
               display: flex;
@@ -50,6 +51,36 @@
             }
             a:hover{
               text-decoration:underline;
+            }
+            .searchbar {
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              padding-top: 20px;
+              position: relative;
+            }
+            .searchbar input[type=text] {
+              display: block;
+              position: relative;
+              padding-left: 50px;
+              padding-right:50px;
+              border: 1px solid rgb(223,225,229);
+              border-radius: 24px;
+              margin-top: 8px;
+              margin-right: 16px;
+              font-size: 17px;
+              width: 475px;
+              height: 46px;
+
+            }
+            .searchbar input[type=image]{
+              position: absolute;
+              width: 15px;
+              height: 22px;
+              background-color:transparent;
+              top: 40px;
+              right: 350px;
+
             }
 
 
@@ -101,6 +132,10 @@
 
       <div class="searchbar-img">
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+      </div>
+      <div class="searchbar">
+          <input type="text" placeholder="">
+          <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png">
       </div>
 
     </p>
