@@ -2,11 +2,7 @@
 <html lang="en">
 
     <head>
-
-        <!--Begin LEI CSS-->
-
         <style>
-
             .searchbar-img {
               display: block;
               text-align: center;
@@ -16,22 +12,19 @@
               display: flex;
               flex-direction: row;
               width: 100%;
-
             }
-
             .nav-item{
               color:rgb(34,34,34);
               font-family:arial,sans-serif;
               font-size:13px;
               padding: 18px 10px 20px 10px;
               text-decoration:none;
-
             }
             .middle-buff{
               padding:0px;
               flex: 1;
             }
-            .rg-3{
+            #icon{
               padding-top:15px;
               padding-right: 25px;
             }
@@ -39,7 +32,6 @@
               padding: 7px 12px 7px 12px;
               margin-bottom: 18px;
               margin-top:10px;
-
               background-clip: padding-box;
               background-color: rgb(66,133,244);
               color:white;
@@ -71,22 +63,59 @@
               font-size: 17px;
               width: 475px;
               height: 46px;
-
             }
-            .searchbar input[type=image]{
-              position: absolute;
+            .searchbar input[id=tlk]{
+              position: relative;
               width: 15px;
               height: 22px;
               background-color:transparent;
-              top: 40px;
-              right: 350px;
+              padding-top: 20px;
+              margin-left: -50px;
+            }
+            .searchbar input[id=src]{
+              position: relative;
+              width: 20px;
+              height: 20px;
+              background-color:transparent;
+              padding-top: 22px;
+              margin-right: -35px;
+              z-index:1;
+            }
+            .push-bttns{
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              padding-top: 20px;
+              position: relative;
+            }
+            .push-bttns button{
+              height: 35px;
+              width: 140px;
+              background-color: rgb(242,242,242);
+              border: 1px solid rgb(242,242,242);
+              border-radius: 4px;
+              box-shadow: 0;
+              color: #5F6367;
+              font-family: arial,sans-serif;
+              font-size: 14px;
+            }
+            .push-bttns button[id=b1]{
+              margin-right:10px;
+            }
+            .push-bttns button[id=b2]{
+              margin-left:10px;
+            }
+            footer{
+              display:flex;
+              color: #5f6368;
+              background-color:#fff;
 
             }
+            .ft{
+              align-self:flex-end;
 
-
+            }
         </style>
-
-
     </head>
 
 
@@ -117,7 +146,7 @@
             </div>
 
 
-            <div class="nav-item rg rg-3">
+            <div id="icon" class="nav-item rg rg-3">
                 <a href="#"><img src ="http://www.myiconfinder.com/uploads/iconsets/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png" width="20px" height "20px">
                 </a>
             </div>
@@ -134,11 +163,50 @@
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
       </div>
       <div class="searchbar">
+          <input id = "src" type="image" src="https://www.pinclipart.com/picdir/big/15-157992_lens-clipart-magnifier-magnifying-glass-icon-grey-png.png">
           <input type="text" placeholder="">
-          <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png">
+          <input id = "tlk" type="image" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png">
+      </div>
+      <div class="push-bttns">
+        <button id="b1" type="button">Google Search</button>
+        <button id="b2" type="button">I'm Feeling Lucky</button>
       </div>
 
     </p>
+
+    <footer>
+      <div class="nav-item lf lf-1 ft">
+            <a href="#">Advertising
+            </a>
+      </div>
+      <div class="nav-item lf lf-2 ft">
+         <a href="#">Buisness
+           </a>
+      </div>
+      <div class="nav-item lf lf-2 ft">
+         <a href="#">How Search Works
+           </a>
+      </div>
+
+      <div class="nav-item middle-buff ft">
+
+      </div>
+
+      <div class="nav-item rg rg-1 ft">
+         <a href="#">Privacy
+           </a>
+      </div>
+
+      <div class="nav-item rg rg-2 ft">
+         <a href="#">Terms
+           </a>
+      </div>
+
+      <div class="nav-item rg rg-3 ft">
+        <a href="#">Settings
+          </a>
+      </div>
+    </footer>
     </body>
 
 </html>
