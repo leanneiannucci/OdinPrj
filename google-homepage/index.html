@@ -3,6 +3,24 @@
 
     <head>
         <style>
+              html, body {
+                  width: 100%;
+                  height: 100%;
+              }
+
+              article {
+                  min-height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: stretch;
+              }
+              section {
+                flex-grow: 1;
+              }
+
+              header, p, section, footer {
+                  flex-shrink: 0;
+              }
             .searchbar-img {
               display: block;
               text-align: center;
@@ -24,6 +42,7 @@
               padding:0px;
               flex: 1;
             }
+
             #icon{
               padding-top:15px;
               padding-right: 25px;
@@ -105,22 +124,23 @@
             .push-bttns button[id=b2]{
               margin-left:10px;
             }
-            footer{
-              display:flex;
+            .footer-things{
+              display: flex;
               color: #5f6368;
-              background-color:#fff;
-
+              background:#f2f2f2;
+              font-family: arial,sans-serif;
+              font-size: 14px;
             }
             .ft{
               align-self:flex-end;
-
             }
+
         </style>
     </head>
 
 
     <body>
-
+      <article>
       <header class="navbar">
             <div class="nav-item lf lf-1">
                   <a href="#">About
@@ -173,40 +193,45 @@
       </div>
 
     </p>
+    <section>
+    </section>
 
     <footer>
-      <div class="nav-item lf lf-1 ft">
-            <a href="#">Advertising
+      <div class="footer-things">
+        <div class="nav-item lf lf-1 ft">
+              <a href="#">Advertising
+              </a>
+        </div>
+        <div class="nav-item lf lf-2 ft">
+           <a href="#">Buisness
+             </a>
+        </div>
+        <div class="nav-item lf lf-2 ft">
+           <a href="#">How Search Works
+             </a>
+        </div>
+
+        <div class="nav-item middle-buff ft">
+
+        </div>
+
+        <div class="nav-item rg rg-1 ft">
+           <a href="#">Privacy
+             </a>
+        </div>
+
+        <div class="nav-item rg rg-2 ft">
+           <a href="#">Terms
+             </a>
+        </div>
+
+        <div class="nav-item rg rg-3 ft">
+          <a href="#">Settings
             </a>
-      </div>
-      <div class="nav-item lf lf-2 ft">
-         <a href="#">Buisness
-           </a>
-      </div>
-      <div class="nav-item lf lf-2 ft">
-         <a href="#">How Search Works
-           </a>
-      </div>
-
-      <div class="nav-item middle-buff ft">
-
-      </div>
-
-      <div class="nav-item rg rg-1 ft">
-         <a href="#">Privacy
-           </a>
-      </div>
-
-      <div class="nav-item rg rg-2 ft">
-         <a href="#">Terms
-           </a>
-      </div>
-
-      <div class="nav-item rg rg-3 ft">
-        <a href="#">Settings
-          </a>
-      </div>
+        </div>
+    </div>
     </footer>
+  </article>
     </body>
 
 </html>
